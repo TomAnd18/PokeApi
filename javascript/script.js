@@ -12,6 +12,8 @@ window.addEventListener("scroll", () => {
 
 document.addEventListener("keypress", function(e) {
     if(e.key === "Enter") {
+        e.preventDefault();
+        console.log('Presione Enter');
         buscarPokemon();
     }
 })
@@ -41,7 +43,7 @@ function removeChild(element) {
 
 /*BUSCAR POKEMON*/
 function buscarPokemon() {
-    // preventDefault();
+    
     let name = document.getElementById('buscar').value;
     
     if(name == '') {
@@ -106,6 +108,7 @@ async function obtenerPokemon(pokemons, name) {
         noEncontradoContainer.appendChild(imgNE);
         noEncontradoContainer.appendChild(noEncontrado);
         pokemonsContainer.appendChild(noEncontradoContainer);
+        console.log('LLEGUEEEEEEE');
     }
 }
 
