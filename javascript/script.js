@@ -51,8 +51,11 @@ function buscarPokemon() {
         botones.style.visibility = 'hidden';
         let buscando = document.createElement('h3');
         buscando.textContent = 'Buscando Pokemon...';
+        let cargando = document.createElement('div');
+        cargando.classList.add('rueda');
         const buscandoContainer = document.createElement('div');
         buscandoContainer.classList.add('buscandoContainer');
+        buscandoContainer.appendChild(cargando);
         buscandoContainer.appendChild(buscando);
         pokemonsContainer.appendChild(buscandoContainer);
 
@@ -96,8 +99,11 @@ async function obtenerPokemon(pokemons, name) {
         removeChild(pokemonsContainer);
         let noEncontrado = document.createElement('h3');
         noEncontrado.textContent = 'Pokemon no encontrado';
+        let imgNE = document.createElement('img');
+        imgNE.src = './img/noEncontrado1.png';
         const noEncontradoContainer = document.createElement('div');
         noEncontradoContainer.classList.add('noEncontradoContainer');
+        noEncontradoContainer.appendChild(imgNE);
         noEncontradoContainer.appendChild(noEncontrado);
         pokemonsContainer.appendChild(noEncontradoContainer);
     }
@@ -218,6 +224,9 @@ function createCardPokemon(pokemon) {
     card.addEventListener('click', () => {
         removeChild(pokemonsContainer);
         botones.style.visibility = 'hidden';
+
+        // const body = document.getElementById('body');
+        // body.classList.add(pokemon.types[0].type.name);
         
         const card = document.createElement('div');
         card.classList.add('card-pokemon-info');
