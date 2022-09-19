@@ -1,0 +1,584 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    /* background-color: hsla(135, 85%, 62%, 0.302); */
+    background: radial-gradient(hsl(147, 97%, 50%), #29abe3);
+    font-family: 'Freckle Face', cursive;
+}
+
+.container-global {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    /* background-color: darkslategrey; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    padding-top: 0.4rem;
+    padding-left: 1rem;
+}
+
+.title {
+    /* margin-left: 2rem; */
+    margin-top: 1rem;
+    margin-left: 0.1rem;
+    margin-bottom: 1rem;
+    width: 40%;
+}
+
+/* .busqueda:hover {
+    transform: translateX(0px) scale(1.01);
+    transition: .3s;
+} */
+
+.busqueda {
+    margin-right: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.abajo {
+    transition: 0.7s;
+    background: radial-gradient(rgb(248, 248, 248), hwb(156 61% 11%));
+}
+
+.input {
+    width: 12rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.boton {
+    width: 6rem;
+    height: 1.8rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.boton:hover {
+    background-color: #5eb9b2;
+    color: #fff;
+}
+
+.main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6rem;
+}
+
+.tipos {
+    /* background-color: hsl(197, 70%, 39%); */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+    position: fixed;
+    left: 0%;
+    top: 5%;
+}
+
+.tipos button {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    align-self: center;
+    border-radius: 1rem;
+    color: white;
+    width: 35%;
+    font-weight: bold;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.tipos button:hover {
+    background-color: white;
+    color: black; 
+    transform: translateY(-3px) scale(1.13);
+    transition: .1s;
+}
+
+.todos-btn {
+    background-color: blue;
+}
+
+#pokemons-container {
+    width: 88%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.card-pokemon {
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    padding: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 20rem;
+    height: 15rem;
+    align-items: center;
+    border-radius: 1rem;
+    justify-content: space-around;
+    color: #fff;
+    
+}
+
+.info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 3rem; */
+}
+
+.info-container h3 {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    align-self: flex-start;
+    padding: 3px 10px;
+    margin-left: 2rem;
+}
+
+.info-container h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding-left: 0.5rem;
+}
+
+
+.img-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 12rem;
+}
+
+.img-container img:hover {
+    transform: translateY(-5px) scale(1.13);
+    transition: .5s;
+}
+
+.card-pokemon-info {
+    /* background-color: #5eb9b2; */
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.card-pokemon-info button {
+    width: 15%;
+    margin: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: black;
+}
+
+.card-pokemon-info button:hover {
+    background-color: black;
+    color: #fff;
+    transform: translateY(-3px) scale(1.13);
+    transition: .1s;
+}
+
+.img-info {
+    /* background-color: #00ca91; */
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.img-container-info {
+    width: 60%;
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container-info img {
+    width: 90%;
+}
+
+.info-container-poke {
+    width: 40%;
+}
+
+.detalles-container h3 {
+    padding: 0%;
+    margin: 0%;
+}
+
+.detalles-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 4px 8px;
+    margin: 1rem;
+    color: #fff;
+    text-transform: capitalize;
+    /* align-self: flex-start; */
+    /* width: fit-content; */
+}
+
+.head-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-title-container h3 {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 4px 8px;
+    margin: 6px;
+    color: #fff;
+    text-transform: capitalize;
+    width: fit-content;
+}
+
+/* .info-container-poke h3 {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 3px 10px;
+    color: #fff;
+    text-transform: capitalize;
+    align-self: flex-start;
+    width: fit-content;
+} */
+
+.info-container-poke h2 {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+
+
+/* h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: yellow;
+    -webkit-text-stroke: 2px blue;
+} */
+
+#botones {
+    display: flex;
+    justify-content: center;
+}
+
+.bug {
+    /* background-color: #aedf78; */
+    background: radial-gradient(hsl(89, 79%, 82%), #aedf78);
+}
+  
+.water {
+    /* background: #43ccff; */
+    background: radial-gradient(#a6e0f5, #43ccff);
+}
+  
+.grass {
+    /* background: #00ca91; */
+    background: radial-gradient( hsl(163, 72%, 66%), #00ca91);
+}
+  
+.fire {
+    background: #e95c4d;
+}
+  
+.normal {
+    background: #a5a5a5;
+}
+  
+.poison {
+    background: #611380;
+}
+  
+.electric {
+    background: #f9be00;
+}
+
+.ground {
+    background: #bfac21;
+}
+  
+.fairy {
+    background: #f87ea7;
+}
+  
+.fighting {
+    background: #e81319;
+}
+
+.psychic {
+    background: #8a0532;
+}
+  
+.ghost {
+    background: #8e55a4;
+}
+  
+.rock {
+    background: #776a3e;
+}
+
+.ice {
+    background: #66d1e5;
+}
+  
+.flying {
+    background: #5eb9b2;
+}
+  
+.dark {
+    background: #2d221c;
+}
+  
+.dragon {
+    background: #29036a;
+}
+  
+.steel {
+    background: #7b8e8a;
+}
+
+.unknown {
+    background: #454545;
+}
+  
+.shadow {
+    background: #4f4f4f;
+}
+
+.buscandoContainer {
+    font-size: 2rem;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.noEncontradoContainer {
+    font-size: 2rem;
+    font-family: 'Bungee Spice', cursive;
+}
+
+#botones {
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    position: fixed;
+    top: 96%;
+    /* left: 42%; */
+    align-self: center;
+}
+
+#botones button {
+    padding: 3px 5px;
+    margin: 2px;
+    border-radius: 1rem;
+    background-color: #fff;
+    width: 6rem;
+}
+
+#botones button:hover {
+    background-color: black;
+    color: #fff;
+}
+
+
+
+@media (max-width: 858px) {
+    /* .main {
+        flex-direction: column;
+    } */
+
+    body {
+        margin-bottom: 5rem;
+    }
+
+    .tipos {
+        flex-direction: row;
+        padding: 0%;
+        margin: 0%;
+        left: 0%;
+        top: 10%;
+        height: 6.5%;
+        width: 100%;
+        /* flex-wrap: wrap; */
+        /* position: relative; */
+        overflow-y: auto;
+    }
+
+    .tipos button {
+        width: 20%;
+        margin: 0.2rem;
+    }
+
+    /* .tipos button {
+        margin-left: 0.8rem;
+        font-size: 0.5rem;
+        align-self: center;
+        border-radius: 1rem;
+        color: white;
+        width: min-content;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }*/
+
+    #pokemons-container {
+        /* background-color: #43ccff; */
+        margin-top: 10%;
+        width: 100%;
+        padding: 0%;
+    } 
+
+    .card-pokemon {
+        width: 30%;
+        height: 28%;
+        margin: 1rem;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .img-container img{
+        width: 6rem;
+    }
+
+    .info-container {
+        width: 100%;
+    }
+
+    .info-container h2 {
+        font-size: 1.2rem;
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+    }
+
+    .info-container h3 {
+        font-size: 1rem;
+        margin: 0.2rem;
+        padding: 0.1rem 0.5rem;
+        align-self: center;
+        border-radius: 0.5rem;
+    }
+
+    .card-pokemon-info {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .card-pokemon-info button {
+        width: 20%;
+    }
+
+    .img-info {
+        width: 100%;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-container-info {
+        padding: 0%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .img-container-info img {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .info-container-poke {
+        width: 90%;
+    }
+
+    /* .info-container-poke h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-left: 0%;
+    } */
+
+    .head-title-container h2 {
+        font-size: 1.3rem;
+        padding-left: 0%;
+    }
+
+    .head-title-container {
+        font-size: 0.7rem;
+        padding-left: 0%;
+    }
+
+    .detalles-container {
+        font-size: 0.7rem;
+        margin: 0.6rem;
+    }
+
+    .nav-container {
+        padding: 0.5rem;
+        padding-bottom: 0%;
+        justify-content: space-between;
+    }
+
+    .title a img {
+        width: 7rem;
+        padding-left: 0%;
+    }
+
+    .busqueda {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .busqueda form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .input  {
+        width: 10rem;
+        margin: 2px;
+    }
+}

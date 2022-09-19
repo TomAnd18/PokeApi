@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>PokeApi</title>
+</head>
+<body onload=getPokemons()>
+
+    <div class="container-global">
+        <nav id="nav" class="nav-container">
+            <div class="title">
+                <!-- <h1 id="title">Pokedex</h1> -->
+                <a onclick="inicio()" href="#"> <img src="./img/pokedex_logo.jpg" alt="Pokedex"> </a>
+            </div>
+
+            <div class="busqueda">
+                <form>
+                    <!-- <label for="buscar">Buscar Pokemon</label> -->
+                    <input class="input" type="text" id="buscar" placeholder="Buscar Pokemon">
+                    <input class="boton" type="button" value="Buscar" onclick="buscarPokemon()">
+                </form>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div class="tipos">
+                <button onclick="inicio()" class="todos-btn">Todos</button>
+                <button onclick="filtrar('bug')" class="bug">Bug</button>
+                <button onclick="filtrar('water')" class="water">Water</button>
+                <button onclick="filtrar('grass')" class="grass">Grass</button>
+                <button onclick="filtrar('fire')" class="fire">Fire</button>
+                <button onclick="filtrar('normal')" class="normal">Normal</button>
+                <button onclick="filtrar('poison')" class="poison">Poison</button>
+                <button onclick="filtrar('electric')" class="electric">Electric</button>
+                <button onclick="filtrar('ground')" class="ground">Ground</button>
+                <button onclick="filtrar('fairy')" class="fairy">Fairy</button>
+                <button onclick="filtrar('fighting')" class="fighting">Fighting</button>
+                <button onclick="filtrar('psychic')" class="psychic">Psychic</button>
+                <button onclick="filtrar('ghost')" class="ghost">Ghost</button>
+                <button onclick="filtrar('rock')" class="rock">Rock</button>
+                <button onclick="filtrar('ice')" class="ice">Ice</button>
+                <button onclick="filtrar('flying')" class="flying">Flying</button>
+                <button onclick="filtrar('dark')" class="dark">Dark</button>
+                <button onclick="filtrar('dragon')" class="dragon">Dragon</button>
+                <button onclick="filtrar('steel')" class="steel">Steel</button>
+                <button onclick="filtrar('unknown')" class="unknown">Unknown</button>
+                <button onclick="filtrar('shadow')" class="shadow">Shadow</button>
+            </div>
+
+            <div id="pokemons-container">
+
+            </div>
+        </div>
+
+        <div id="botones">
+            <button id="previous" type="button">Previous</button>
+            <button id="next" type="button">Next</button>
+        </div>
+    </div>
+
+    <script src="./javascript/script.js"></script>
+
+</body>
+</html>
