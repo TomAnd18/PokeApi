@@ -10,6 +10,12 @@ window.addEventListener("scroll", () => {
     nav.classList.add('abajo');
 })
 
+document.addEventListener("keypress", function(e) {
+    if(e.key === "Enter") {
+        buscarPokemon();
+    }
+})
+
 /*BOTON ANTERIOR*/
 previous.addEventListener('click', () => {
     if (offset != 0) {
