@@ -150,6 +150,8 @@ async function filtroComplete(datos) {
 function inicio() {
     removeChild(pokemonsContainer);
     botones.style.visibility = 'visible';
+    let buscar = document.getElementById('buscar');
+    buscar.value = '';
     limit = 6;
     offset = 0;
     getPokemons();
