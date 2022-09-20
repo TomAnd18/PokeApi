@@ -467,7 +467,45 @@ body {
     }
   }
 
+/*====================================================================*/
 
+@media (max-width: 1600px) {
+    .tipos {
+        display: none;
+    }
+
+    #pokemons-container {
+        /* background-color: #43ccff; */
+        margin-top: 0%;
+        width: 100%;
+        height: 90%;
+        padding: 0%;
+    } 
+
+    .card-pokemon {
+        width: 28%;
+        height: 32%;
+        margin: 0.5rem;
+        margin-bottom: 0%;
+        padding: 1rem;
+    }
+
+    .info-container h2 {
+        font-size: 1.2rem;
+        margin: 1rem;
+        padding: 0%;
+        text-align: center;
+    }
+
+    .info-container h3 {
+        font-size: 1rem;
+        margin: 0.3rem;
+        padding: 0.1rem 0.5rem;
+        align-self: center;
+        border-radius: 0.5rem;
+    }
+
+}
 
 @media (max-width: 858px) {
     /* .main {
@@ -482,7 +520,7 @@ body {
 
     body {
         margin-bottom: 5rem;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
         /* font-family: none; */
     }
 
